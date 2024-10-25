@@ -44,6 +44,8 @@ for (let i =0 ; i<nodeListButton.length;i++){
             break;                 
            
         }
+
+        
         
        var audio = new Audio(playedMusic);
        audio.play();
