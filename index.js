@@ -7,7 +7,19 @@ var deveLoperProperty={
     post: 'software engineer',
     hobby :['gym','running','playing badminton']
 }
-console.log(deveLoperProperty.age+"   "+deveLoperProperty.hobby)
+
+//constructir function 
+
+function employess(name,age,comapny,post,hobby){
+this.name=name;
+this.age=age;
+this.comapny=comapny;
+this.post=post;
+this.hobby=hobby;
+
+}
+
+console.log(deveLoperProperty.age+"   "+deveLoperProperty.hobby);
 let nodeListButton = document.querySelectorAll(".drum");
 console.log(nodeListButton);
 for (let i =0 ; i<nodeListButton.length;i++){
