@@ -1,11 +1,13 @@
-// document.querySelector("button").addEventListener("click",handleClick)
-// function handleClick(){
-// alert("i am clicked")
-// }
 
 
-//annoymous function 
-
+var deveLoperProperty={
+    name:'kunal nagwanshi',
+    age:'27',
+    comapny:'Quantum power system',
+    post: 'software engineer',
+    hobby :['gym','running','playing badminton']
+}
+console.log(deveLoperProperty.age+"   "+deveLoperProperty.hobby)
 let nodeListButton = document.querySelectorAll(".drum");
 console.log(nodeListButton);
 for (let i =0 ; i<nodeListButton.length;i++){
