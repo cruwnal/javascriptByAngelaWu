@@ -5,7 +5,18 @@ var deveLoperProperty={
     age:'27',
     comapny:'Quantum power system',
     post: 'software engineer',
-    hobby :['gym','running','playing badminton']
+    hobby :['gym','running','playing badminton'],
+    coding : function (){
+        alert('can i solve the real world problem sir');
+        communicationSkills();
+    }
+
+}
+
+
+function  communicationSkills(){
+
+    alert('i can speak english and hindi');
 }
 
 //constructir function 
@@ -19,6 +30,13 @@ this.hobby=hobby;
 
 }
 
+
+
+
+//intializing the object 
+
+var employee1 = new employess('naveen',27,'qps','software engineer',['watching cricket','playing football']);
+console.log(employee1.name);
 console.log(deveLoperProperty.age+"   "+deveLoperProperty.hobby);
 let nodeListButton = document.querySelectorAll(".drum");
 console.log(nodeListButton);
@@ -45,7 +63,7 @@ for (let i =0 ; i<nodeListButton.length;i++){
            
         }
 
-        
+
         
        var audio = new Audio(playedMusic);
        audio.play();
