@@ -58,6 +58,7 @@ for (let i =0 ; i<nodeListButton.length;i++){
 
     nodeListButton[i].addEventListener("click",function () {
      var buttonClick = this.innerHTML;
+     buttonAnimation(this.innerHTML);
       var playedMusic ='';
         switch(buttonClick){
             case'w':playedMusic='sounds/tom-1.mp3';
@@ -87,6 +88,7 @@ for (let i =0 ; i<nodeListButton.length;i++){
 
 document.addEventListener('keydown',function(e){
     var playedMusic ='';
+    buttonAnimation(e.key);
   var keyPressed = e.key;
    switch (keyPressed){
     case'w':playedMusic='sounds/tom-1.mp3';
@@ -110,4 +112,39 @@ document.addEventListener('keydown',function(e){
    }
    var audio = new Audio(playedMusic);
        audio.play();
-})
+});
+
+
+
+//call back function 
+
+function addAnotherEventListner(typeOfEvent,callBack){
+    var eventThatHappend = {
+        eventType:'keypress',
+        key:'P',
+        durationOfPress:2
+    }
+
+    if(eventThatHappend.eventType===typeOfEvent){
+        callBack(eventThatHappend);
+    }
+}
+
+//button animation 
+
+
+function buttonAnimation(e){
+    var activation = document.querySelector("."+e);
+    activation.classList.add("pressed");
+
+    setTimeout(function (){
+        var addedClass = document.querySelector('.pressed');
+        
+            addedClass.classList.remove("pressed");
+    
+            
+    
+    }, 1000);
+}
+//
+
