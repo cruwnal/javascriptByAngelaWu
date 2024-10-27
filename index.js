@@ -14,6 +14,20 @@ var deveLoperProperty={
 }
 
 
+var testerProperty={
+    name:'barak obama',
+    age:'60',
+    company:'usa',
+    hobby:'bombing the country',
+    testing: function(){
+        alert('i can bomb your country');
+        communicationSkills();
+
+    }
+    
+}
+
+
 function  communicationSkills(){
 
     alert('i can speak english and hindi');
@@ -89,7 +103,9 @@ document.addEventListener('keydown',function(e){
     break;   
     case 'l':playedMusic='sounds/crash.mp3'
     break; 
-    default : console.log('wron key press');                     
+    default : 
+    
+    console.log('wrong key press');                     
 
    }
    var audio = new Audio(playedMusic);
