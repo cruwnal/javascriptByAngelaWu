@@ -136,15 +136,12 @@ function addAnotherEventListner(typeOfEvent,callBack){
 function buttonAnimation(e){
     var activation = document.querySelector("."+e);
     activation.classList.add("pressed");
-
+//for remobving the animation after every one second
     setTimeout(function (){
         var addedClass = document.querySelector('.pressed');
         
             addedClass.classList.remove("pressed");
-    
-            
-    
-    }, 1000);
+    }, 100);
 }
-//
 
+console.log("here i amm testing it is cam or not"+$(h1).innerHTML)
